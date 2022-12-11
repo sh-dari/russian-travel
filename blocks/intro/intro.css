@@ -3,12 +3,26 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 984px;
-  margin: auto;
+  margin: 0 auto;
   padding: 92px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    margin: 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    margin: 0 24px;
+    padding-bottom: 88px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .intro {
+    margin: 0 16px;
     padding: 64px 0;
   }
 }

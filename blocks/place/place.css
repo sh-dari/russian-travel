@@ -1,18 +1,26 @@
 .place {
   display: grid;
   grid-template-columns: repeat(2, fit-content(460px));
-  gap: 40px;
+  gap: 48px 40px;
   padding: 80px 0 0;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 984px;
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-template-columns: repeat(2, fit-content(440px));
+    margin: 0 48px;
+    gap: 48px 32px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .place {
-    display: grid;
     grid-template-columns: repeat(2, fit-content(340px));
-    gap: 40px;
-    padding: 80px 0 0;
-    justify-content: center;
+    margin: 0 24px;
+    gap: 48px 28px;
+    padding-top: 73px;
   }
 }
 
@@ -20,7 +28,7 @@
   .place {
     grid-template-columns: repeat(1, minmax(320px, 1fr));
     gap: 32px;
-    padding: 80px 0 0;
-    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
   }
 }

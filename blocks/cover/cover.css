@@ -1,20 +1,16 @@
 .cover {
   display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
   background: #2a2c2f url(../../images/cover__background.png) no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center center;
   min-height: 740px;
   margin: 92px auto 0;
   max-width: 1184px;
   box-sizing: border-box;
   text-align: center;
-  color: #fff;
-  text-decoration: none;
-  cursor:  url(../../images/Pointer.png), auto;
 }
 
 .cover::after {
@@ -24,20 +20,28 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(42, 44, 47, .7);
+  background: #2a2c2f;
   background-size: cover;
-  opacity: 0;
+  opacity: 0.3;
   z-index: 1;
 }
 
 .cover:hover::after{
-  opacity: 1;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    max-width: 1024px;
+    min-height: 640px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .cover {
     max-width: 768px;
     min-height: 480px;
+    margin: 43px auto 0;
   }
 }
 

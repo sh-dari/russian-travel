@@ -1,7 +1,6 @@
 .header__lang-link {
   color: #fff;
   text-decoration: none;
-  cursor:  url(../../../images/Pointer.png), auto;
 }
 
 .header__lang-link:hover {
