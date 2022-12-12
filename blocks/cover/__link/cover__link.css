@@ -1,12 +1,12 @@
 .cover__link {
-  display: block;
+  display: flex;
   color: #fff;
   text-decoration: none;
   text-align: center;
   margin: 0;
-  /* flex-direction: column;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   z-index: 2;
   width: 100%;
 }
