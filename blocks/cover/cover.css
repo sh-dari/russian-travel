@@ -1,7 +1,7 @@
 .cover {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: stretch;
   position: relative;
   background: #2a2c2f url(../../images/cover__background.png) no-repeat;
   background-size: cover;
@@ -11,6 +11,7 @@
   max-width: 1184px;
   box-sizing: border-box;
   text-align: center;
+  z-index: 1;
 }
 
 .cover::after {
