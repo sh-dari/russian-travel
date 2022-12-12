@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 1024px) {
   .cover__title {
-    margin: 19% auto 32px;
+    margin: 0 auto 32px;
   }
 }
 
